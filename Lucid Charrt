@@ -1,0 +1,148 @@
+def value_in_string():
+    sentence = 'Python is the best!'
+    def value_in_string():
+    sentence = 'Python is the best!'
+    if 'is' in sentence:#YourConditionHere:
+      print('The word is in the sentence')
+    else:
+      print('The word is not in the sentence')#YourConditionHere:
+      print('The word is in the sentence')
+    else:
+      print('The word is not in the sentence')
+      ??????????????????????????????????????????????
+      def compound_conditional(number):
+    if number > 1 and number <= 100:
+        print("Success!")
+    else:
+        print("Failure...")
+def greeting():
+    print('hello')
+greeting()
+
+def sum_two_numbers(cofee, frappe):
+    return cofee + frappe  
+    """""""""""""""""""""""""""""""
+    def counter(initial_count=0):
+    initial_count=initial_count+1
+    return initial_count
+     
+
+print(counter())      
+    ??????????????????????????????????????/////
+      <div class="links">
+                        <div class="nav-link">
+                            <i class="fas fa-home"></i>
+                        <a href="index.html">Home</a>
+                    </div>
+                        <div class="nav-link">
+                            <i class="fas fa-question"></i>
+                        <a href="about.html">About</a>
+                    </div>
+                    <div class="nav-link">
+                        <i class="fas fa-bars"></i>
+                        <a href="menu.html">Menu</a>
+                        </div> 
+                </div>
+                def named_arguments_practice(sequence):
+    sequence(first=1, second=2, third=3, fourth=4, fifth=5)
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    def lambda_practice():
+    greeting= lambda name: f'Hi, {name}'# Write your code here
+    return greeting
+    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+        var myNumber = 12;
+    String(myNumber); 
+    var myNewString = myNumber.toString();
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    string = "Hello, what happened to all the pie?"
+    str = "Hello, what happened to all the pie?"
+    str.endsWith('?');
+    str.startsWith('H');
+    ///////////////////////////////////////////////
+    stringOne = "save the turtles"
+var str = "save the turtles";
+replacedString =  str.replace('world', 'turtles');
+stringTwo = "The overheating kill the world"
+var str = "The overheating kill the world";
+indexOfOver =  str.indexOf('over');
+stringThree = "save the world"
+var str = "save the world";
+lastIndex = str.lastIndexOf('never') 
+:::::::::::
+//Use Compound Assignment Operators to solve the above problem
+
+function mathTest() {
+    //please do not delete this
+    var sum = 0;
+    var lemons= 250;
+    var limes= 36;
+    
+     sum+= lemons;
+     sum+= limes;
+    //please do not delete this
+    return sum;
+}
+
+mathTest();
+????????????????????????
+number = 6 + 10 * 7;
+|||||||||||||||||
+answer = false;
+
+if ('You can have a bestfriend') {
+    answer = true;
+}
+?????????????????????????
+function watermelonParty() {
+    watermelons = 38;
+    if ( watermelons <= 50) {
+        return false;
+    }
+}
+watermelonParty();
+////////////////////////
+function kid() {
+  age = 12;
+    if (age >= 12 && age < 25) {
+        console.log("You can eat candy");
+        return true;
+    }
+}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+function sum (num1, num2){
+     return (num1 + num2);
+ }
+ /////////////////////////
+ var someUser = {
+    name: 'Blank'
+};
+
+function changeName(user) {
+    return name = "Jordan";
+}
+
+changeName(someUser);
+>>>>>>>>>>>>>>>
+function movieTheater(){
+    var seats = 50;
+    var seatsSold = 28;
+
+    return {
+        remainingSeats: function(){
+            return (seats - seatsSold)
+        }
+    } 
+}
+
+var roomOne = movieTheater()
+console.log(roomOne);
+let array = ['1','2','3','4',];
+array . push ('Bagels');
+array;['Altuve', 'Bregman', 'Correa', 'Bagels'];
+var array = ['Altuve', 'Bregman', 'Correa', 'Springer'];
+
+array.splice(3,4);
+}}}}}}}}}}}}}}}}}}
+var array = ['Altuve', 'Bregman', 'Correa', 'Springer'];
+
+array.splice(3,4);

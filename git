@@ -1,0 +1,25 @@
+okay so to add stuff in git first press Ctrl` or open your terminal when you have all that set your gonna make a new repository
+the first code you gonna add is 
+git init is for initianing your git init so your compuer can know your giving the orders to open that
+second one is git add . enter to add all the files to the file
+third one is git status to check your files 
+fourth one is git commit -m "add the name of your page"
+fifth is your link 
+and your all set your last cde is git push
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+mkdir its to make a new file 
+vim:What does the vim command do?
+Vim is an editor to create or edit a text file. There are two modes in vim. 
+One is the command mode and another is the insert mode. 
+In the command mode, user can move around the file, delete text, etc.
+touch its to create the new repository inside git 
+ls to add a file 
+cd to pull the file 
+code to open visual 
+git clone no add the link 
+git merge main: it shows all the changes in git
+git checkout kelly : to check out whats inside 
+git branch: u name yor branch and git branch _name its to 
+git pull:to pull 
+git checkout b- it to check you branch ,                                                 
+https://ugeek.github.io/blog/post/2019-01-28-crear-ramas-con-git.html

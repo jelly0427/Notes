@@ -1,0 +1,396 @@
+it is the only language that the browser can understand,it was created to be the one language that the browser can understand,
+javascript is the most popular  coding language
+it helps with mobile aplications
+javascript is one of the most powerful language to autamate actions
+it is super useful.
+var is changeable
+var hello_world="por_estan_guapo"
+console.log(hello_world)
+var name,city,age;
+ name ="kristin";
+age=12;
+city="scotsdale";
+console.log(name)
+console.log(age)
+console.log(city)
+let is not changeable
+let name="kristine";
+VARIABLES
+var truthy=true;
+var falsy=false;
+console.log(truthy);
+var nollie='nol';
+console.log(nollie);
+var notDefined;
+console.log(notDefined)
+var name ='kristen';
+var nametwo ='jordan';
+console.log(name)
+console.log(nametwo)
+var user={name: "kristine"}
+console.log(user.name);
+user.age = 13;
+user.grades.coding = 95;
+var user={
+  name: "kristine",
+  age:12,
+city:"scotsdale",
+grades: {
+ math:90,
+  science:80,
+  languagearts:100,
+}
+}
+user.grades.coding=90;
+console.log(user.grades);
+  typeof "astros"
+"string"
+typeof true
+"boolean"
+age= null;
+null
+"100"-42
+58
+100+null
+100
+"100" + 42; // "10042"
+42 + "100"; // "42100"
+"100" - 42; // 58
+100 + null; // 100
+var ageOne = 12;
+String(ageOne); // '12'
+ageOne.toString(); // '12'
+var ageTwo = '33';
+Number(ageTwo); // 33
+parseInt(ageTwo); // 33
+parseFloat(ageTwo); // 33
++ ageTwo; // 33
+///PARSEINT FUNCTION///
+parseInt('5555555555 is my phone number'); // 5555555555
+parseInt('foo 5555555555 is my phone number'); // NaN
+Number("100") + 42; // 142
+Number(true); // 1
+Number(false); // 0
+///STRING LENGTH///
++ agetwo
+33
+var str ='my sister is very rude'
+undefined
+str .length
+22
+////HOW TO PICK STUFF// charAt FUNCTION///
+string.carAt(2);
+str.charAt(3)
+"s"
+str.charAt(12)
+" "
+this is to add stuff/
+str.concat(" again and again")
+str.concat(" again and again")
+"my sister is very rude again and again"
+///STR.INCLUDES////
+str.includes('foo')
+false
+str.includes('quick')
+false
+str.startsWith('my')
+true
+str.endsWith('rude')
+true
+str.endsWith(' is rude')
+false
+ ///this is how to repeat ///
+str.repeat('5')
+"my sister is very rudemy sister is very rudemy sister is very rudemy sister is very rudemy sister is very rude"
+var str ='my sister is very rude'
+undefined
+str.match(/((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/)
+null
+str.replace("sister","brother")
+"my brother is very rude"
+///how to replace a word///
+str.replace("sister","brother")
+"my brother is very rude"
+str;'225-439-0556 my moms number'.search(/((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/)
+0
+str;"my sister is very rude"
+"my sister is very rude"
+str
+"my sister is very rude"
+str="my teacher is my teacher"
+"my teacher is my teacher"
+str;
+"my teacher is my teacher"
+str.indexOf('my')
+0
+///TO SLICE AND TRIM///
+str.slice(1, 5).trim();
+"the"
+///TO PUT IN UPPERCASE///
+str.toUpperCase();
+"  THEY GO TO FAST"
+//TO LOWERCASE//
+str.toLowerCase();
+"  they go to fast"
+//basic arithmic operators///
+ //MAIN OPERATOR///
+ 2+2
+4
+(2+2)
+4
+10/2
+5
+1-2
+-1
+2*8
+16
+5%2
+1
+6%2
+0
+var num=2;
+undefined
+///post fixt terms///
+///incramentors and decromentors///
+num++;
+2
+num;
+3
+++num
+4
+num--
+4
+num
+3
+--num
+2
+variables are special containers that can hold values/
+///how to get opposite///
+var somenum=10;
+undefined
+var someothernum =-somenum;
+undefined
+someothernum
+-10
+var strnum ='100'
+undefined
+var convertednum = +strnum
+undefined
+convertednum
+100
++strnum
+100
+compound assignment opperator/
+var sum=0
+undefined
+var gradeone=100
+undefined
+var gradetwo=80
+undefined
+sum+=gradeone
+100
+sum
+100
+sum+=gradetwo
+180
+sum8=gradetwo
+80
+sum*gradetwo
+14400
+///ORDER OF OPERATION P.E.M.D.A.S
+//pemdas///
+var num =5+5*10;
+console.log(num);=55
+var num =(5+5)*10;
+console.log(num);=100
+ / LOGICAL ERRORS ARE WHEN ITS RUNNING BUT GIVING THE WRONG OUTPUT/
+////CONDITIONALS
+CONDITIONALS ALLOW YOU TO HAVE DYNAMIC BEHAVIOR IN A REAL LIFE CONDITION////
+var age =12;
+var agetwo =12
+;
+if (age===agetwo){
+  console.log('they are equal');
+}
+/THEY ARE EQUAL/
+var age =12;
+var agetwo =18
+;
+if (age !== agetwo){
+  console.log('not equal');
+}
+/ THEY ARE NOT EQUAL /
+var age=7;
+if (age<= 10){
+  console.log("eat from kid menu");
+}
+/EAT FROM KID MENU/
+if (age >=25){
+  console.log('old enougth to rent a car');
+}
+/GREATER THAN OR EQUAL TO/
+///IF OR ELSE///
+var age=30;
+if (age <=10){
+  console.log("YOU CAN EAT FROM THE KIDS MENU");
+}else{
+  console.log("YOU CAN EAT FROM THE Adults MENU");
+}//
+///IF ELSE IF FUNCTION////
+var age=50;
+if (age <=10){
+  console.log("YOU CAN EAT FROM THE KIDS MENU");
+   console.log("YOU are not old enougth to drive");
+  console.log("YOU  you are not old  enoughth to rent a car");
+}else if (age >=16 && age < 25){
+  console.log("YOU CAN not EAT FROM THE KIDS MENU");
+   console.log("YOU are  old enougth to drive");
+  console.log("YOU  you are not  old  enoughth to rent a car");
+}else if (age >=  25){
+  console.log("YOU CAN not EAT FROM THE KIDS MENU");
+   console.log("YOU are  old enougth to drive");
+  console.log("YOU  you are  old  enoughth to rent a car");
+}///
+THERE CAN BE COMPOUND CONDITIONALS
+///SWITCH STATMENT///
+var datapoint =6;
+switch (typeof datapoint){
+  case "string":
+    console.log('its a string');
+break;
+  case "number":
+console.log('it is a number!');
+break;
+  case "boolean":
+console.log('it either true or false!');
+break;
+  default:
+    console.log('no matches');
+}
+///////
+///TERNARY OPPERATOR//ALLOWS YOU TO WRITE AN ENTIRE CONDITION ON A SINGLE LINE//
+ //first part is the CONDITIONAL//
+<div classname=(haspermision ? 'active' : 'disabled')>
+  </div>
+function ageverification(age) {
+  if (age > 25) {
+    console.log('cant rent a car');
+} else {
+  console.log("is not old enougth yet");
+}
+}
+ageverification(15)////
+function ageverification(age) {
+  let answer = age > 25 ? "can rent car":'cant rent a car';
+  console.log(answer);
+}
+ageverification(26)////
+function admincontrols(user){
+ let response = user ? user.admin ? "showwing admin controls...":"you need to be an admin ": "you need  to be alogged in";
+  console.log(response);
+}
+let userone = {
+  name:'kristine',
+  admin:true
+}
+admincontrols(userone);
+let user2 = {
+  name:'kristine',
+  admin:false
+}
+admincontrols(user2);
+let user3 = {
+  name:'kristine',
+  admin:null
+}
+admincontrols(user3);
+///FUNCTIONS///
+function rafa () {
+  console.log ('rafa)
+}
+function rafatwo() {
+return"rafa again"
+}
+undefined
+rafatwo()
+"rafa again"
+function rafa () {
+  console.log ('rafa')
+}
+undefined
+rafa();
+hi there
+var userobj = {
+  email:'brandon.tuckee.lebaron@gmail.com',
+  fullname:'brandon tucker'
+}
+function dashboardgreeting() {
+  console.log('hi there, '.concat(userobj.fullname));
+}
+dashboardgreeting();
+FUNCTION EXPRESSION///
+function greeting(){
+  return "hi there";
+}
+var greetingTwo = function() {
+  return"hi there again";
+};
+function fullName(firstName, lastName, language) {
+var  language = language|| 'English';
+return lastName.toUpperCase() + ", " + firstName.toUpperCase() + "- " + language;
+}
+console.log (fullName('jordan', 'hudgens'));
+var someUser = {
+    name: 'Jordan'
+}
+function nameFormatter (user) {
+    return user.name = 'Oops';
+}
+nameFormatter(someUser); // "Oops"
+someUser; // Object {name: "Oops"}
+var someName = 'Tiffany';
+function someOtherNameFormatter(name) {
+    return name = 'Oops';
+}
+someOtherNameFormatter(someName); // "Oops"
+someName; // "Tiffany"
+function nameFormatter (userName) {
+    return userName = 'Oops';
+}
+someUser.name; // "Oops"
+someUser.name = 'Kristine';
+nameFormatter(someUser.name); // "Oops"
+someUser.name; // "Kristine"
+"Kristine"
+batter averager///
+function battingAverage () {
+  var hits =100;
+  var atBats =300;
+ return {
+   getCurrentAverage: function () {
+     return (hits/atBats)
+   },
+   updateHitsAndAtBats: function (hit,atBat){
+     hits += hit;
+     atBats += atBat;
+   }
+ }
+}
+var altuve = battingAverage();
+console.log(altuve.getCurrentAverage());
+this videos from here to are from java script there usefull for later 
+also they are like a recap from what we did in the past qick note watch it from this video to the next one 
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/how-to-run-javascript-programs
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/working-with-string-functions-part-3
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<><>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<
+HOW TO AVERAGE A NUMBER WIT ARRAYS THISS VIDEO IS HELPFULL FOR EXPLENATION 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+compound conditionals were gonna use them the 95% of the time  theres two types of conditionals 
+https://stackoverflow.com/questions/9549780/what-does-this-symbol-mean-in-javascript
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+TERNARY OPERATOR
+let response = user ? (user.admin ? "showing admin controls..." : "You need to be an admin") : "You need to be logged in";
+console.log(response);
+GLOVAL VARIABLES THEY GET ALL YOUR CODE
+LOCAL JUST GETS ONE VARIABLE AND THE SCOOP ONE DOES TOO 

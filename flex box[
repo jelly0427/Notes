@@ -1,0 +1,15 @@
+Overview of Flex Direction
+this link is gonna help you on how to use lex box
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/overview-flex-directionsss
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/overview-flex-basis
+https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+for flex box u use {
+   display: flex;
+      justify-content: center;
+      align-items: center;
+}
+display: flex works for to give your elements some flexibility
+   flex-direction: column; is to move your elements 
+   flex-grow is to make it bigger
+   flex shrink is to make it smaller
+   ja.

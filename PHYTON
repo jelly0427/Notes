@@ -1,0 +1,822 @@
+espacios es una sangria para hacer una variable en phyton no ocupas lo mismo que en java script 
+name = 'Kelly'
+post_count = 42
+
+print(name)
+print(post_count)
+https://www.python.org/dev/peps/pep-0008/#naming-conventions
+link para memorisarlo
+X & Y son variables    
+Booleans
+Numbers
+Strings
+Bytes and byte arrays
+None
+Lists
+Tuples
+Sets
+Dictionaries
+meal_completed = True
+sub_total = 100
+tip = sub_total * 1/5
+total = sub_total + tip
+receipt = "Your total is " + str(total)
+print(receipt)
+si pones ' dos de esa el odigo no se va a leer tienes q poner /' para q se lea o ""
+para ponerlo en mayuscula esta la opcion de poner priny(sentence.upper())
+str.upper()
+Return a copy of the string with all the cased characters [4] converted to uppercase. Note that s.upper().isupper() might be False > if s contains uncased characters or if the Unicode category of the resulting character(s) is not “Lu” (Letter, uppercase), but e.g. > “Lt” (Letter, titlecase).
+
+str.capitalize()
+Return a copy of the string with its first character capitalized and the rest lowercased.
+
+str.lower()
+Return a copy of the string with all the cased characters [4] converted to lowercase.
+# The quick brown fox jumped
+# T => 0
+# h => 1
+# e => 2
+# ' ' => 3
+son las iniciales de la 
+
+starter_sentence = 'The quick brown fox jumped'
+
+new_sentence = 'Thy' + starter_sentence[3:]
+
+print(new_sentence)
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/how-to-access-portions-strings-python
+str.strip([chars])
+Return a copy of the string with the leading and trailing characters removed. The chars argument is a string > specifying > 
+the set of characters to be removed. If omitted or None, the chars argument defaults to removing >whitespace. 
+The chars argument is not a prefix or suffix; rather, all combinations of its values are stripped:
+content = """
+Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo.
+
+Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in.
+
+Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+"""
+
+print(repr(content))
+
+long_string = '\nNullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo.\n\nVestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in.\n\nInteger posuere erat a ante venenatis dapibus posuere velit aliquet.\n'
+
+print(long_string)
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/how-to-build-raw-multiline-string-python
+name = 'Kristine'
+age = 12
+product = 'Python eLearning course'
+from_account = 'Jordan'
+
+greeting = "Product Purchase: {2} - Hi {0}, you are listed as {1} years old. - {3}".format(name, age, product, 'Jordan')
+
+greeting = f"Product Purchase: {product} - Hi {name}, you are listed as {age} years old. - {from_account}"
+
+print(greeting)str.format(*args, **kwargs)
+Perform a string formatting operation. The string on which this method is called can contain literal text or 
+>replacement fields delimited by braces {}. Each replacement field contains either the numeric index of a positional 
+>argument, or the name of a keyword argument. Returns a copy of
+ the string where each replacement field is >replaced with the string value of the corresponding argument.
+ https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/how-to-use-pythons-format-method-implement-index-based-string-interpolation
+ sentence = 'The quick brown fox jumped over the lazy dog.'
+
+query = sentence.find('oops')
+query_two = sentence.index('oops')
+
+print(query)
+print(query_two)
+
+query = 'oops' in sentence
+
+print(query)
+Python Documentaion
+str.find(sub[, start[, end]])
+Return the lowest index in the string where substring sub is found within the slice s[start:end]. Optional arguments >start and end are interpreted as in slice notation. Return -1 if sub is not found
+
+Note
+The find() method should be used only if you need to know the position of sub. To check if sub is a substring or >not, use the in operator
+
+str.index(sub[, start[, end]])
+Like find(), but raise ValueError when the substring is not found.
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/finding-substring-python-find-index-in    
+sentence = 'The quick brown fox jumped over the lazy dog.'
+
+sentence = sentence.replace('quick', 'slow')
+
+print(sentence.replace('quick', 'slow'))
+print(sentence)
+and thats how u know if the word is there or not 
+sentence = 'The quick brown fox jumped over the lazy dog.'
+
+print(sentence[-4:]) thats a negative one it starts from the end 
+heading = "Python: An Introduction, and Python: Advanced"
+
+header, _, subheader = heading.partition(': ')
+
+print(header)
+print(subheader)
+
+first, second, third = heading.partition(': ')
+_, es desasernos de el
+
+print(first)
+print(second)
+print(third)
+tags = 'python,coding,programming,development'
+
+list_of_tags = tags.split(',')
+list_of_tags = tags.split()
+
+print(list_of_tags)
+
+heading = "Python: An Introduction"
+
+heading, subheading = heading.split(': ')
+
+print(heading)
+print(subheading) 
+heading.split los separa o les da espacios
+https://bottega.devcamp.com/pt-full-stack-development-javascript-python-react/guide/guide-python-split-function
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/how-to-check-strings-represent-numbers-alphanumeric-characters-python
+https://bottega.devcamp.com/pt-full-stack-development-javascript-python-react/guide/overview-number-types-python
+print('Addition')
+print(100 + 42)
+
+print('Subtraction')
+print(100 - 42)
+
+print('Division')
+print(100 / 42)
+print(100 / 38)
+
+print('Floor Division')
+print(100 // 42)
+print(100 // 38)
+
+print('Multiplication')
+print(100 * 42)
+
+print('Modulus')
+print(100 % 42)
+
+print('Exponents')
+print(100 ** 42)
+https://bottega.devcamp.com/pt-full-stack-development-javascript-python-react/guide/mathematical-operators-python
+"""
+Please -> Parans ()
+Excuse -> Exponents **
+My -> Multiplication *
+Dear -> Division /
+Aunt -> Addition +
+Sally -> Subtraction -
+ * PROCEDIMIENTO *
+8 + 2 * 5 - (9 + 2) ** 2
+8 + 2 * 5 - 11 ** 2
+8 + 2 * 5 - 121
+8 + 10 - 121
+-103
+"""
+
+calculation = 8 + 2 * 5 - (9 + 2) ** 2
+
+print(calculation)
+total = 100
+
+total = total + 10
+total += 10
+total -= 10
+total *= 2
+total /= 10
+total //= 10
+total **= 2
+total %= 2
+
+product_two = 120
+product_three = 10
+
+total += product_two
+total += product_three
+
+print(total)
+THIS IS ANOTHER WAY TO DO IT ITS EASIER
+THERE CALLED  assignment operators in Python
+
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/guide-order-operations-python
+HOW TO IMPORT DECIMALS
+from decimal import Decimal
+
+product_cost = 88.40
+commission_rate = 0.08
+qty = 450
+
+product_cost += (commission_rate * product_cost)
+print(product_cost * qty) # 42962.4
+ANOTHER WAY TO DO IT
+product_cost = Decimal(88.40)
+commission_rate = Decimal(0.08)
+qty = 450
+
+product_cost += (commission_rate * product_cost)
+print(product_cost * qty) # 42962.40000000000282883716451
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/decimal-vs-float-python
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/how-to-convert-between-integer-float-decimal-complex-numeric-data-types-python
+
+loss = -20.25
+product_cost = 89.99
+
+print(abs(loss))
+print(math.floor(product_cost))
+print(math.ceil(product_cost))
+print(abs(math.floor(loss)))
+print(round(product_cost))
+print(math.sqrt(product_cost))
+print(math.pow(5, 2))
+print(5 ** 2)
+math floor = rebondirlo
+math ceil = redondearlo ariba
+round
+math sqrt
+math pow
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/overview-popular-math-functions-python
+a video i have 
+to watch again
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/build-manual-exponent-function-python
+
+User Database Query
+Kristine
+Tiffany
+Jordan
+"""
+
+users = ['Kristine', 'Tiffany', 'Jordan']
+
+print(users)
+
+users.insert(1, 'Anthony')
+
+print(users)
+
+users.append('Ian')
+
+print(users)
+
+print([users[2]])
+
+users[4] = 'Brayden'
+
+print(users)
+users is to add people or any element
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/overview-python-list-query-processes-len-negative-indexes-index
+tags = ['python', 'development', 'tutorials', 'code']
+
+print(tags)
+
+tags.sort()
+
+print(tags)
+
+tags.sort(reverse=True)
+
+print(tags)
+
+totals = [234, 1, 543, 2345]
+
+totals.sort(reverse=True)
+
+print(totals)s
+MEDIA
+
+import math
+
+"""
+Tools:
+- math library
+- sorted function
+- list slicing
+- computations
+"""
+
+sale_prices = [
+  100,
+  83,
+  220,
+  40,
+  100,
+  400,
+  10,
+  1,
+  3
+]
+
+sorted_list = sorted(sale_prices)
+num_of_sales = len(sorted_list)
+half_slice = math.floor(num_of_sales/2)
+first_sales_items = sorted_list[:half_slice]
+last_sales_items = sorted_list[-(half_slice):]
+median = sorted_list[half_slice:(half_slice + 1)]
+
+print(sorted_list)
+print(num_of_sales)
+print(first_sales_items)
+print(last_sales_items)
+print(median)
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/how-to-find-the-median-python-list-odd-number-numbers
+tags = [
+  'python',
+  'development',
+  'tutorials',
+  'code',
+  'programming',
+]
+
+print(tags[1:4:2])
+
+slice_obj = slice(1, 4, 2)
+
+print(slice_obj.start)
+print(slice_obj.stop)
+print(slice_obj.step)
+
+print(tags[slice_obj])
+How to Add to a List in Python with Both In Place and Copy Processes
+tags = ['python', 'development', 'tutorials', 'code']
+
+# Nope
+tags[-1] = 'Programming'
+
+# In Place
+tags.extend('Programming')
+tags.extend(['Programming'])
+
+# New List
+new_tags = tags + ['Programming']
+
+print(new_tags)
+
+print(tags)
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/how-to-add-list-python-with-both-in-place-copy-processeshttps://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/how-to-add-list-python-with-both-in-place-copy-processeshttps://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/how-to-add-list-python-with-both-in-place-copy-processeshttps://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/how-to-add-list-python-with-both-in-place-copy-processeshttps://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/how-to-add-list-python-with-both-in-place-copy-processeshttps://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/how-to-add-list-python-with-both-in-place-copy-processeshttps://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/how-to-add-list-python-with-both-in-place-copy-processeshttps://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/how-to-add-list-python-with-both-in-place-copy-processeshttps://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/how-to-add-list-python-with-both-in-place-copy-processeshttps://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/how-to-add-list-python-with-both-in-place-copy-processes
+  *HOW TO PROGRAM THE LOTTERY *
+import numpy as np
+
+def weighted_lottery(weights):
+    container_list = []
+  *THIS IS GONNA GIVE US THE AVILITY TO GIVE ORDERS TO THE SYSTEM*
+    for (name, weight) in weights.items():
+        for _ in range(weight):
+            container_list.append(name)
+
+    return np.random.choice(container_list)
+
+#  weights = {
+#      'winning': 1,
+#      'losing': 1000
+#  }
+#
+#  print(weighted_lottery(weights))
+
+other_weights = {
+    'green': 1,
+    'yellow': 2,
+    'red': 3
+}
+
+print(weighted_lottery(other_weights))
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/build-weighted-lottery-function-python
+ players = {
+  "ss": "Correa",
+  "2b": "Altuve",
+  "3b": "Bregman",
+  "DH": "Gattis",
+  "OF": "Springer",
+}
+
+second_base = players['2b']
+designated_hitter = players['DH']
+
+print(designated_hitter)
+SO THIS IS HOW U CREATE A DICTIONARY U NEED TO PUT THE STRING VALUE SO ITS LIKE A SHORT CUT TO NOT WRITE ALL OF IT 
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/overview-python-dictionaries
+teams = {
+  "astros": ["Altuve", "Correa", "Bregman"]
+}
+print(teams['astros'])***
+teams = {
+  "astros": ["Altuve", "Correa", "Bregman"],
+  "angels": ["Trout", "Pujols"],
+  "yankees": ["Judge", "Stanton"],
+}
+
+astros = teams['astros']
+print(astros)
+print(teams['angels'])
+print(teams['yankees']) 
+One thing that's very helpful is this may look kind of complex if you've never seen this type of structure before we have a variable we have curly brackets we 
+have all of these kinds of elements. However, if you start to look at it and dissect it into little pieces you actually know what each one of these elements is and how to work with them
+*THIS IS HOW TO ADD A KEY*
+teams = {
+  "astros": ["Altuve", "Correa", "Bregman"],
+  "angels": ["Trout", "Pujols"],
+  "yankees": ["Judge", "Stanton"],
+}
+
+teams['red sox'] = ['Price', 'Betts']
+
+print(teams)
+*******************************************************
+Now get takes two arguments. The first is a key we're looking for. So in the case of the Mets which does not exist inside of our team's dictionary and then also it takes whatever you want that backup to be. So if I want it to be simply a string that says no featured team then let's see what happens here. So if I run this we no longer get the error. Now it simply prints out no featured team.
+teams = {                                   
+  "astros": ["Altuve", "Correa", "Bregman"],                                    
+  "angels": ["Trout", "Pujols"],                                    
+  "yankees": ["Judge", "Stanton"],                                    
+  "red sox": ['Price', 'Betts'],                                      
+}                                   
+
+featured_team = teams.get('yankees', 'No featured team')                                                  
+                                                                      #
+print(featured_team)                                                  #
+get gives us the function to grab multiple proccesor at the same time #
+#######################################################################
+https://docs.python.org/3.0/library/stdtypes.html#dictionary-view-objects
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/guide-python-dictionary-view-objects
+players = {
+  "ss" : "Correa",
+  "2b" : "Altuve",
+  "3b" : "Bregman",
+  "DH" : "Gattis",
+  "OF" : "Springer",
+}
+
+player_names = list(players.copy().values())
+
+teams = {
+  "astros" : ["Altuve", "Correa", "Bregman"],
+  "angels":  ["Trout", "Pujols"],
+  "yankees": ["Judge", "Stanton"],
+  "red sox": ["Price", "Betts"],
+}
+
+team_groupings = teams.items()
+
+"""
+[
+  ('astros', ['Altuve', 'Correa', 'Bregman']),
+  ('angels', ['Trout', 'Pujols']),
+  ('yankees', ['Judge', 'Stanton']),
+  ('red sox', ['Price', 'Betts'])
+]
+"""
+
+print(list(team_groupings)[1][1][0])
+####################################################################### 
+teams = {
+  "astros" : ["Altuve", "Correa", "Bregman"],
+  "angels":  ["Trout", "Pujols"],
+  "yankees": ["Judge", "Stanton"],
+  "red sox": ["Price", "Betts"],
+}
+
+del teams['angels']
+removed_team = teams.pop('mets', 'Team not found')
+
+print(teams)
+print(removed_team)
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/overview-multiple-methods-deleting-items-python-dictionary
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+"""
+g $$$$$$$$$$$$$$$$$$$$
+f $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+t $$$$$$$$$$
+o $$$$$$$$$$$$
+"""
+
+sales = {
+  'google': 20,
+  'facebook': 42,
+  'twitter': 10,
+  'offline': 12,
+}
+
+print('g ' + sales['google'] * '$')
+print('f ' + sales['facebook'] * '$')
+print('t ' + sales['twitter'] * '$')
+print('o ' + sales['offline'] * '$')
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/introduction-python-tuples
+impotant TUPLES 
+# List: []
+# Dictionary: {}
+# Tuple: ()
+
+# Tuple: immutable 
+# List: mutable
+
+post = ('Python Basics', 'Intro guide to python', 'Some cool python content')
+
+# Tuple unpacking
+title, sub_heading, content = post
+
+# Equivalent to Tuple unpacking
+# title = post[0]
+# sub_heading = post[1]
+# content = post[2]
+
+print(title)
+print(sub_heading)
+print(content)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+when your working with a tuple u need to add a coma and instead of putting post + post just say post+= and it adds 
+post again, tuples no pueden cambiar porque son immutable the id gives us a fuction and unique function for the lement 
+if you add two ids with out an assaigment its gonna refer to the same object  so when you give it an option its gonna 
+make a new set 
+
+post = ('Python Basics', 'Intro guide to python', 'Some cool python content')
+
+print(id(post))
+print(id(post))
+
+post += ('published',)
+
+print(id(post))
+
+title, sub_heading, content, status = post
+
+print(title)
+print(sub_heading)
+print(content)
+print(status)
+??????????????????????????????????????????????????????????????????????????????
+post = ('Python Basics', 'Intro guide to Python', 'Some cool python content')
+
+tags = ['python', 'coding', 'tutorial']
+
+post += (tags,)
+
+print(post[-1][1])
+it goes to the middle because [-1][1] u set those ad it starts from the end and 1 so it goes to middle  
+
+??????????????????????????????????????????????????????????????????????????????
+how to remove items from a tuple 
+post = ('Python Basics', 'Intro guide to Python', 'Some cool python content', 'published')
+
+# Removing elements from end
+post = post[:-1]
+
+# Removing elements from beginning
+post = post[1:]
+
+# Removing specific element (messy/not recommended)
+post = list(post)
+post.remove('published')
+post = tuple(post)
+
+print(post)
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/three-ways-remove-elements-python-tuple
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+priority_index = {
+  (1, 'premier'): [1, 34, 12],
+  (1, 'mvp'): [84, 22, 24],
+  (2, 'standard'): [93, 81, 3],
+}
+
+print(list(priority_index.keys()))
+thats how u add keys from adictionary to a tuple 
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/how-to-use-a-tuple-dictionary-key-python
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/guide-python-s-zip-function
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::;:::::::::::::
+# Uniqueness
+tags = {
+  'python',
+  'coding',
+  'tutorials',
+  'coding'
+}
+
+print(tags)
+
+# Nope
+print(tags[0])
+
+query_one = 'python' in tags
+query_two = 'ruby' in tags
+
+print(query_one)
+print(query_two)
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/introduction-python-set-data-structure
+{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+Ktags_one = {
+  'python',
+  'coding',
+  'tutorials',
+  'coding'
+}
+
+tags_two = {
+  'ruby',
+  'coding',
+  'tutorials',
+  'development'
+}
+
+# merged tags
+merged_tags = tags_one | tags_two
+print(merged_tags)
+
+# tags in tags_one but not in tags_two
+exclusive_to_tag_one = tags_one - tags_two
+print(exclusive_to_tag_one)
+
+# tags in tags_two but not in tags_one
+exclusive_to_tag_two =  tags_two - tags_one
+print(exclusive_to_tag_two)
+
+# tags found in both tags_one and tags_two
+universal_tags = tags_one & tags_two
+print(universal_tags)
+Chttps://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/various-methods-merging-python-sets
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+THERES TWO TYPES OF LOOPS 
+FOR...IN
+WOULD BE THE AVILITY TO TURN IT MANY TIMES AS LONGEST THERES SOME inside
+WHILE LOOP IS REALLY DIFERENT IF U DONT TELL IT WHEN TO STOP ITS GONNA KEEP GOING SO U HAVE TO SET IT GOOD 
+AND TELL IT WHEN TO STOP 
+###############################################################################################################
+players = ['Altuve', 'Bregman', 'Correa', 'Gattis']
+players = ('Altuve', 'Bregman', 'Correa', 'Gattis')
+
+for player in players:
+  print(player)
+
+players = {
+  '2b': 'Altuve',
+  '3b': 'Bregman',
+  'ss': 'Correa',
+  'dh': 'Gattis'
+}
+
+for position, player in players.items():
+  print('Position', position)
+  print('Player', player)
+
+  for player in players:is a loop and with for u can add anything like for x and it will print it out
+  https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/how-to-implement-python-loops-lists-tuples-dictionaries
+  """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+ def loop_over_string():
+    name = 'owen'
+    for separados in name:
+     print(separados)# Write your code here
+    return name if you put letter it prints each letter
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    usernames = [
+  'jon',
+  'tyrion',
+  'theon',
+  'cersei',
+  'sansa',
+]
+
+for username in usernames:
+  if username == 'cersei':
+    print(f'Sorry, {username}, you are not allowed')
+    continue
+  else:
+    print(f'{username} is allowed')
+
+for username in usernames:
+  if username == 'cersei':
+    print(f'{username} was found at index {usernames.index(username)}')
+    break
+  print(username)
+  https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/guide-continue-break-python-loops
+  https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/overview-while-loops-python
+  https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/how-to-combine-flatten-lists-python-for-in-loop
+  https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/introduction-using-list-comprehension-python8
+  |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+ # Single condition
+age = 25
+
+if age < 25:
+  print(f"I'm sorry, you need to be at least 25 years old")
+
+# if/else
+age = 55
+
+if age < 25:
+  print(f"I'm sorry, {age} is under 25 years old")
+else:
+  print(f"You're good to go, {age} fits in the range to rent a car")
+
+# if/elif/else30
+age = 55
+
+if age < 25:
+  print(f"I'm sorry, {age} is under 25 years old")
+elif age > 100:
+  print(f"I'm sorry, {age} is over 100 years old")
+else:
+  print(f"You're good to go, {age} fits in the range to rent a car")
+  """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+  so its the same as java script if its true its gonna run but if its not then not 
+  when you implement elif it allows us to add aditionnal coditions
+  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+role = 'guest'
+
+auth = 'can access' if role == 'admin' else 'cannot access'
+
+if role == 'admin':
+  auth = 'can access'
+else:
+  auth = 'cannot access'
+
+print(auth)  
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# List of comparison operators
+# == Equality
+# != Inequality
+# <> Inequality (deprecated)
+# >  Greater than
+# >= Greater than or equal to
+# < Less than
+# <= Less than or equal to
+estos son simbolos a los que pertenecen cada uno 
+
+username = 'jonsnow'
+
+if username == 'jonsnow':
+  print('Welcome Jon')
+else:
+  print('You shall not pass!')
+
+age = 25
+
+if age <= 25:
+  print(f"I'm sorry, you need to be at least 25 years old")
+  https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/full-list-python-conditional-operators
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+username = 'jonsnow'
+email = 'jon@snow.com'
+password = 'thenorth'
+
+if username == 'jonsnow' and password == 'thenorth':
+  print('Access permitted')
+else:
+  print('Not allowed')
+
+
+if (username == 'jonsnow' or email == 'jon@snow.com') and password == 'thenorth':
+  print('Access permitted')
+else:
+  print('Not allowed')
+
+
+if username == 'jonsnow' or password == 'thenorth':
+  print('Access permitted')
+else:
+  print('Not allowed')
+
+
+logged_in = True
+standard_user = False
+
+if logged_in and not standard_user:
+  print('You can access the admin dashboard')
+else:
+  print('You can only access the standard dashboard')
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+LAMBDA : In Python, a lambda function is a single-line function declared with no name, 
+which can have any number of arguments, but it can only have one expression. 
+Such a function is capable of behaving similarly 
+to a regular function declared using the Python's def keyword.
+also lambda is a box
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/guide-python-lambdas
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::;:::::::::
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/solution-fizzbuzz-python
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+def fizz_buzz(max_num):
+  for num in range(1, max_num + 1):
+    if num % 3 == 0 and num % 5 == 0:
+      print('FizzBuzz')
+    elif num % 5 == 0:
+      print('Buzz')
+    elif num % 3 == 0:
+      print('Fizz')
+    else:
+      print(num)
+
+
+fizz_buzz(100)
+&&&&&&&&&&&&&&&&&&&&&
+for fizzbuzz in range(51):
+    if fizzbuzz % 3 == 0 and fizzbuzz % 5 == 0:
+        print("fizzbuzz")
+        continue
+    elif fizzbuzz % 3 == 0:
+        print("fizz")
+        continue
+    elif fizzbuzz % 5 == 0:
+        print("buzz")
+        continue
+    print(fizzbuzz)
+    so practically in a fizz_buzz  u do everything u learn in phyton 
+    from using percentages to using var and keys but 
+    =========================================================================================

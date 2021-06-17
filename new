@@ -1,0 +1,98 @@
+stringOne = "The dog meows"
+replacedString =  // replace the word dog with cat
+stringTwo = "The cow jumped over the moon"
+indexOfOver =  // get the index of over
+stringThree = "Never gonna give you up never gonna let you down"
+lastIndex = // get the last index of neve
+function greeting(){
+return "Hi there!";
+}
+var greetingTwo = function () {
+return 'Hi there again';
+};
+console.log(greeting());
+console.log(greetingTwo());
+code to change the page 
+ document.getElementsByClassName('b1')[0].innerHTML = 'Hi there';
+ *PALABRAS CABLES*
+ $('.btn-guide').click(function(event) {
+    event.preventDefault();
+    console.log($(this));
+});
+es para selecionar algo 
+*THIS ES PALABRA CLAVE COMO UNA CONDICIONAL O CONTRAPARTEi*
+SO THIS CONNECTS VERY SINGLE FILE 
+var guide = {
+  title:'Guide to programming',
+  content:'Content goes here...',
+  visibleToUser: function (viewingUserRole) {
+    if (viewingUserRole === 'paid') {
+      return true;
+    } else {
+      return false;
+    }
+  },
+  renderContent: function(userRole){
+    if (this.visibleToUser(userRole)) {
+      console.log(this.title + "-" + this.content);
+    }else{
+      this.content = '';
+       console.log(this.title + "-" + this.content);
+    }
+  }
+}
+user = {role: 'paid'};
+ console.log(this.title + "-" + this.content);
+ *HOW ARRAY WORKS *
+ var generatedArray = new Array(3);
+undefined
+generatedArray
+(3) [empty × 3]
+generatedArray.length
+3
+var generatedArray = new Array ('Altuve','Correa','Spring',);
+undefined
+generatedArray
+(3) ["Altuve", "Correa", "Spring"]
+var literalArray = [1, 2, 3];
+undefined
+literalArray
+(3) [1, 2, 3]
+var literalArray = ['Altuve','Correa','Spring'];
+undefined
+literalArray
+(3) ["Altuve", "Correa", "Spring"]
+literalArray.length
+3
+var mixedArray = ['hi', 1 , ['a', 'b', 'c'], { name: 'Kelly' },function greeting () { console.log('hey there');}]
+undefined
+literalArray
+(3) ["Altuve", "Correa", "Spring"]
+literalArray[0];
+"Altuve"
+ U USE [] TO PICK WHAT EVER WORD U NEED U SUS HE BRAKETS TO PCK WHAT WORD U NEED DONT BE SCARED TO USE FUCTIONS AT THE END THATS HOW U ADD WHATS INSIDE OF THTA BOX
+ AN ARRAY IS A WAY TO STORAGE LIKE IF U WANT TO STORAGE MULTIPLE STUFF 
+
+BUNCLE is to reload and put it over again 
+var student = {
+  name: 'Kelly',
+  age: 15,
+  city: 'Galeana'
+};
+for (var key in student){
+  console.log(key + " => " + student [key]);
+}var student = {
+  name: 'Kelly',
+  age: 15,
+  city: 'Galeana'
+};
+for (var key in student){
+  console.log(key + " => " + student [key]);
+}
+*ONE OF THE BIGEST THINGS TO BE SUSESFULL IS TO GET A LONG WITH YOUR TEAMATES
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/how-to-break-through-cycle-procrastination
+“Being willing to fail is a liberating attribute of transformative thinking.”
+important
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+

@@ -1,0 +1,9 @@
+padding sirve para rellenar los espacios 
+align-items es para mover tu texto 
+display flex es para que este flexible para moverlo
+justify content  es para moverlo 
+height tamallo de la cajita 
+background color es para cambiar el color de la cajita 
+padding es como las manesillas del reloj 
+fr es cada columna 
+grid te ayuda a separar 

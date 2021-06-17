@@ -1,0 +1,92 @@
+class Lineup:
+
+    def __init__(self, players):
+        self.players = players
+        self.last_player_index = (len(self.players) - 1)
+
+    def __iter__(self):
+        self.n = 0
+        return self
+
+    def get_player(self, n):
+        return self.players[n]
+
+    def __next__(self):
+        if self.n < self.last_player_index:
+            player = self.get_player(self.n)
+            self.n += 1
+            return player
+        elif self.n == self.last_player_index:
+            player = self.get_player(self.n)
+            self.n = 0
+            return player
+
+
+astros = [
+  'Springer',
+  'Bregman',
+  'Altuve',
+  'Correa',
+  'Reddick',
+  'Gonzalez',
+  'McCann',
+  'Davis',
+  'Tucker'
+]
+
+astros_lineup = Lineup(astros)
+process = iter(astros_lineup)
+
+print(next(process))
+print(next(process))
+print(next(process))
+print(next(process))
+print(next(process))
+print(next(process))
+print(next(process))
+print(next(process))
+print(next(process))
+print(next(process))
+print(next(process))
+print(next(process))
+print(next(process))
+print(next(process))
+print(next(process))
+print(next(process))
+print(next(process))
+print(next(process))
+print(next(process))
+print(next(process))
+print(next(process))
+print(next(process))
+if you dont add the -1 your code might not work 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+FILE BUILDER IS TO ADD A FILE FROM YOUR PC 
+file_builder = open("logger.txt", "w+")
+
+for i in range(1000):
+    file_builder.write(f"I'm on line {i + 1}\n")
+
+() IS THE NUMBER OF HOW MANY TIMES U WANT IT TO RE GENARATE
+# file_builder.write("Hey, I'm in a file!")
+
+file_builder.close()
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/how-to-create-write-file-python
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*>>>>>>>>>>>>>>>>>>>>>>>>>>>>*<<<<<<<<<
+REGULAR EXPERSIONS THEY HELP YOU TO HACER COINCIDIR PATRONES
+THEY HAVE THE AVILITY TO MATCH PATTERNS
+FNMATCH IT HELPS YOU WITH YOUR PATTERNS
+def pretty_price(gross_price, extension):
+    if isinstance(extension, int):
+        extension = extension * 0.0
+    return int(gross_price) + extension
+print(pretty_price(3.20, 99))
+print(pretty_price(3.99, 0.20))
+print(pretty_price(3.20, .95))
+print(pretty_price(3, 95))
+print(pretty_price(3, 2))
+https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/build-pretty-price-method-python
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<>>>>>>>>>>>
+https://www.delftstack.com/es/howto/python/get-average-of-list-python/
+thats how to get your percentage% onp python
+<><><><><><><><><><><><><><><>><><><><><><><><><><><><><><<><><><><><><><><><><><><><><><><><><><><><><><><><>

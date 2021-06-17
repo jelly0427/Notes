@@ -1,0 +1,242 @@
+dont use rm-rf 
+object 
+var user = {name: 'kelly'}
+user.name
+console.log(user.name);
+var user = {
+            name: 'kelly',
+           age:16,
+           city:'galeana',
+           grades:{
+  math:90,
+  science:80,
+  lenguageArts:100,
+  }
+}
+user.grades.coding = 99,
+console.log(user.grades)  
+ parseint its like copy and paste 
+ parsefloat to get decimals 
+ parseint its for a whole number
+ nan its for not a number
+ "100" + 42; // "10042"
+42 + "100"; // "42100"
+"100" - 42; // 58
+100 + null; // 100
+var ageOne = 12;
+String(ageOne); // '12'
+ageOne.toString(); // '12'
+var ageTwo = '33';
+Number(ageTwo); // 33
+parseInt(ageTwo); // 33
+parseFloat(ageTwo); // 33
++ ageTwo; // 33
+parseInt('5555555555 is my phone number'); // 5555555555
+parseInt('foo 5555555555 is my phone number'); // NaN
+Number("100") + 42; // 142
+Number(true); // 1
+*se repite*
+str.concat('again and again');
+"the quick brown dogagain and again"
+str.includes se agrega una palabra de la que pongas 
+str.replace para remplasar 
+search lo usas para buscar 
+str.match(/((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/); lo utiisas para  verificar 
+str.index te da el numero de la palabra en la que esta ubicada 
+{this is how to replace 
+str.replace("best","worst");
+"the worst teacher"}
+[str.charAt(9);str.slice(6)
+is for cuting the sentence 
+"t"]
+cuand usas negativo es para cortar de derecha a izquierda
+str.slice(3,8).trim()
+"best"
+str.toUpperCase();
+"THE BEST TEACHER"
+str.toUpperCase();
+"THE BEST TEACHER"
+str.toLowerCase();
+"the best teacher
+/Use Compound Assignment Operators to solve the above problem
+function mathTest() {
+    //please do not delete this
+    var sum = ;
+
+    //Delete this and assign your variables, then do some math
+    //please do not delete this
+    return sum;
+    var age = 10;
+var agetwo = '15';
+// if (age === agetwo) {
+//   console.log('they are equal');
+// }
+// if (age !== agetwo) {
+//   console.log('not equal');
+// 
+// if (age >= 25) {
+//   console.log('old enough to rent a car ');
+// }
+if (age <=10 ){
+  console.log('you can eat from the kids menu');
+}
+no funciona la condicional si no tiene ordenes
+var age = 30;
+if (age <=10) {
+   console.log('you can eat from the kids menu');
+}
+&& son condicionales
+var age = 30;
+if (age <=10) {
+   console.log('you can eat from the kids menu');
+   console.log('you are not old enough to drive');
+   console.log('you are not old enough to rent a car');
+} else if (age >= 16  && age < 25) {
+   console.log('you can eat from the kids menu');
+   console.log('you are  old enough to drive');
+   console.log('you are not old enough to rent a car');
+} else if (age >=25)  {
+ console.log('you can not  eat from the kids menu');
+   console.log('you are  old enough to drive');
+   console.log('you are  old enough to rent a car');
+}
+  default:
+  var dataPoint = 23!;
+
+switch (typeof dataPoint) {
+  case "string":
+    console.log("It's a string");
+    break;
+  case "number":
+    console.log("It's a number");
+    break;
+  case "boolean":
+    console.log("It's a boolean");
+    break;
+  default:
+    console.log('No matches');
+}
+So here what I could say is, has permission and then I'm going to do a question mark, and then we'll say active and I'm making all of this up right here, this is just an example to show what you may build. Then we're going to get into real examples later on. So I could say active colon and then disabled.
+<div className={hasPermission ? 'active' : 'disabled'}>
+</div>
+function ageVerification(age) {
+    // if (age > 25) {
+    //     console.log('can rent a car');
+    // } else {
+    //     console.log('is not old enough yet');
+    // }
+  // let anwer = age > 25 ? 'can rent a car ': 'cant rent a car';
+  // console.log(answer);
+  
+}
+ageVerification(5)
+recuerda la primeraparte esla primera condicional 
+how to implement compound logic
+function adminControls(user) {
+    if (user) {
+        if (user.admin) {
+            console.log('showing admin controls...');
+        } else {
+            console.log('you need to be an admin');
+        }
+    } else {
+        console.log('you need to be logged in');
+    }
+} your gonna use a user to see if its true and we knoe we have user so we can add wha ever we want and thats how u usee an admin controls 
+then you gona need to se a logic (if)
+let response = user 
+? (user.admin ? "showing admin controls..." : "You need to be an admin") 
+: "You need to be logged in";
+console.log(response); its the same way as wwe did the last one  this will be the sintax that will aloud u to do it 
+*ANOTHEER WAY TO USE THE CODE*
+function ageVerification(age) {
+  // if (age > 25) {
+  //   console.log('can rent a car');
+  // } else {
+  //   console.log("can't rent a car");
+  // }
+
+  return age > 25 ? "can rent a car" : "can't rent a car";
+}
+
+ageVerification(30); //?
+ageVerification(10); //?
+
+function adminControls(user) {
+  // if (user) {
+  //   if (user.admin) {
+  //     return 'showing admin controls...';
+  //   } else {
+  //     return 'You need to be an admin';
+  //   }
+  // } else {
+  //   return 'You need to be logged in';
+  // }
+
+  return user
+    ? user.admin ? "showing admin controls" : "You need to be an admin"
+    : "you need to be logged in";
+}
+
+const userOne = {
+  name: "Kristine",
+  admin: true
+};
+
+adminControls(userOne); //?
+
+const userTwo = null;
+
+adminControls(userTwo); //?
+
+const userThree = {
+  name: "Tiffany",
+  admin: false
+};
+
+adminControls(userThree); //?
+(functions)
+function hiThere () {
+    console.log('Hi there');
+}
+
+hiThere(); // Hi there
+
+function hiThereTwo() {
+    return 'Hi there again';
+}
+
+hiThereTwo(); // "Hi there again"
+
+var storedText = hiThere(); // Hi there
+
+storedText; // undefined
+
+var storedTextTwo = hiThereTwo();
+
+storedTextTwo; // "Hi there again
+dashboard greeting 
+var userObj = {
+  email: 'sample@example.com',
+  fullName: 'Kristine Hudgens'
+}
+
+function dashboardGreeting() {
+  var userObj = {
+    email: 'sample2@example.com',
+    fullName: 'Jordan Hudgens'
+  }
+  console.log("Hi there, ".concat(userObj.fullName));
+}
+
+dashboardGreeting();
+console.log(userObj.fullName);
+FUNCTION THAT IS NOT name
+var greeting = function () {
+return 'Hi there again';
+};
+language = language || 'English'; || es para or para poder separar
+CSS Grid Guide
+https://css-tricks.com/snippets/css/complete-guide-grid/
+Using negative line numbers can be really helpful
+https://css-tricks.com/things-ive-learned-css-grid-layout/#article-header-id-2

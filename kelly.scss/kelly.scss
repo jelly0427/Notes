@@ -1,0 +1,20 @@
+// HOW TO ADD URL IMG
+// https://mx.devcamp.com/pt-full-stack-development-javascript-python-react/guide/scss-lists-each-directive-string-interpolation
+// List
+$cars: 'maserati', 'tesla', 'porsche';
+// Each directive
+@each $car-name in $cars {
+  //string interpolation
+   .car-#{$car-name}  {
+    background-image: url('https://s3.amazonaws.com/bottega-devcamp/scss/cars/#{$car-name}.jpg');
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 500px;
+    object-fit: fill;
+    float: left;
+    
+  }
+}
+// .CSS Grid Guide
+// https://css-tricks.com/snippets/css/complete-guide-grid/
+// Using negative line numbers can be really helpful
